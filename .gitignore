@@ -1,0 +1,14 @@
+node_modules/
+**/node_modules/
+client/node_modules/
+server/node_modules/
+.vite/
+**/.vite/
+dist/
+**/dist/
+coverage/
+*.log
+npm-debug.log*
+**/.env*
+!**/.env.example
+.DS_Store
