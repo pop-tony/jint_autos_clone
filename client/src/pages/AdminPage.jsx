@@ -145,7 +145,6 @@ export function AdminPage({ cars, setCars, theme, settings, setSettings }) {
       gallery: [newCar.mainImage],
       features: newCar.features,
       description: newCar.description || 'Contact Acceleren Motors to confirm specifications, price and current availability.',
-      modelUrl: `/models/${id}.glb`,
     };
 
     setCars((currentCars) => [car, ...currentCars]);

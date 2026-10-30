@@ -91,5 +91,4 @@ export const INITIAL_CARS = instagramVehicles.map((car) => ({
   color: 'See Instagram photo',
   gallery: [car.mainImage],
   features: ['From Acceleren Motors Instagram'],
-  modelUrl: `/models/${car.id}.glb`,
 }));

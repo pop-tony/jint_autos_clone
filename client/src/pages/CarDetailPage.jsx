@@ -39,7 +39,7 @@ export function CarDetailPage({ cars, theme, settings, onBook }) {
       <div className="mt-6 grid lg:grid-cols-[1.15fr_0.85fr] gap-8">
         <div>
           <Suspense fallback={<div className="aspect-[16/11] animate-pulse rounded-[24px] bg-white/10" aria-label="Loading vehicle showroom" />}>
-            <VehicleShowroom car={car} fallbackImage={car.gallery[activeImg] || car.mainImage} />
+            <VehicleShowroom car={car} />
           </Suspense>
           {car.gallery.length > 1 && (
             <div className="mt-4 grid grid-cols-3 gap-3">

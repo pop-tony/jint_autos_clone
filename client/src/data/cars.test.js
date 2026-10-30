@@ -18,7 +18,6 @@ test('Instagram vehicle features have unique IDs and clearly marked contact-only
     assert.match(car.mainImage, /^\/instagram\/.+\.jpg$/);
     assert.ok(car.gallery.length >= 1);
     assert.match(car.description, /confirm the exact model, specification, price and current availability/);
-    assert.match(car.modelUrl, new RegExp(`^/models/${car.id}\\.glb$`));
     assert.ok(existsSync(new URL(car.mainImage.slice(1), publicDir)), `Missing photo asset: ${car.mainImage}`);
     assert.match(car.instagramPost, /^https:\/\/www\.instagram\.com\/accelerenmotorsghltd\//);
   }
