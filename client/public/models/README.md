@@ -1,5 +1,5 @@
 # Vehicle showroom models
 
-The interactive 360° showroom generates stylized vehicle models directly in the app, so no GLB uploads are required. Vehicle category and name determine the representative body shape, and each model can be rotated with a mouse or touch gesture and zoomed with a scroll or pinch.
+The interactive 360° showroom uses the GLB assets in `public/3dmodels` for the Lexus SUV, Toyota pickup, Toyota van, Corvette, and performance sedan listings. Models are automatically centered and scaled to fit the showroom, and can be rotated with a mouse or touch gesture and zoomed with a scroll or pinch.
 
-These are illustrative concept models, not photorealistic or exact replicas of the listed vehicles. To use a precise make/model appearance, a custom GLB asset can be integrated later.
+Listings without a matching GLB, or whose model fails to load, use the built-in stylized vehicle model instead.
